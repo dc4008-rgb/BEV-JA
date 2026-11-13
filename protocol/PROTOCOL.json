@@ -1,0 +1,648 @@
+{
+  "R01": "all200 completecandidates globalAPranking, neverpartAPaverage",
+  "R02": "original50bc per-image macroAbsRel+delta_sigma",
+  "R03_thresholds": {
+    "beta_eval": 0.1,
+    "confidence_threshold": 0.3,
+    "iou_threshold": 0.5,
+    "rho_min": 0.5,
+    "target_labels": [
+      3,
+      6,
+      8
+    ]
+  },
+  "budget_configurations": {
+    "1": {
+      "SOURCE_counts_not_actual_runtime_facts": true,
+      "effective_cases": 200,
+      "outer_rounds": 1,
+      "per_new_case_application_budget": {
+        "autograd_calls": 50,
+        "depth_adv_forwards": 100,
+        "depth_clean_forwards": 100,
+        "detector_forwards": 102,
+        "noise_draws": 1,
+        "transformer_forward_calls": 25,
+        "vae_decode_calls": 52,
+        "vae_encode_calls": 2
+      },
+      "planned_effective_updates": 5000,
+      "planned_new_cases": 198,
+      "planned_new_updates": 4950,
+      "planned_reused_cases": 2,
+      "scientific_config": {
+        "ablation_variant": "complete",
+        "clip_max_norm": 120.0,
+        "controller_config": {
+          "beta_eval": 0.1,
+          "chi": 0.5,
+          "dmax": 3.0,
+          "ema_decay": 0.7,
+          "epsilon": 1e-08,
+          "model_mu": 0.5,
+          "model_temperature": 1.0,
+          "n_min": 1e-08,
+          "ratio_delta": 0.001,
+          "ratio_max": 2.0,
+          "ratio_min": 0.5,
+          "task_mu": 0.8,
+          "task_temperature": 1.0,
+          "theta": 0.3,
+          "uncertified_reference_policy": "unit_deficit_preserve_scene",
+          "vehicle_labels": [
+            3,
+            6,
+            8
+          ]
+        },
+        "depth_beta": 0.1,
+        "depth_models": [
+          "monodepth2",
+          "dpt_large"
+        ],
+        "depth_weight": 1.0,
+        "detector_models": [
+          "fasterrcnn",
+          "ssd300"
+        ],
+        "eot": {
+          "crop_side_fraction": [
+            0.9,
+            1.0
+          ],
+          "max_attempts": 50,
+          "padding_mode": "border",
+          "random_views": 1,
+          "rotation_degrees": [
+            -5.0,
+            5.0
+          ],
+          "scale_range": [
+            0.9,
+            1.1
+          ],
+          "translation_fraction": [
+            -0.05,
+            0.05
+          ]
+        },
+        "gradient_coefficient": 100000.0,
+        "gradient_combination": "two_task_fp32_periodic_balance_v1",
+        "guidance_scale": 4.5,
+        "latent_lr": 0.05,
+        "negative_prompt": "vehicle, car, obstacle",
+        "num_inference_steps": 100,
+        "outer_rounds": 1,
+        "prompt": "top-down aerial view of clean asphalt road surface",
+        "seed": 20260919,
+        "step_feedback_mode": "latent_chain",
+        "strength": 0.25,
+        "switches": {
+          "conflict_guard": true,
+          "depth_target": "at_least_beta",
+          "ema": true,
+          "model_adaptive": true,
+          "norm_match": true,
+          "period": 5,
+          "task_adaptive": true,
+          "task_balance": "unit_direction"
+        },
+        "weighting_rule": "periodic_gap_gated_foa_v1"
+      },
+      "updates_per_case": 25
+    },
+    "3": {
+      "SOURCE_counts_not_actual_runtime_facts": true,
+      "effective_cases": 200,
+      "outer_rounds": 3,
+      "per_new_case_application_budget": {
+        "autograd_calls": 150,
+        "depth_adv_forwards": 300,
+        "depth_clean_forwards": 300,
+        "detector_forwards": 302,
+        "noise_draws": 3,
+        "transformer_forward_calls": 75,
+        "vae_decode_calls": 154,
+        "vae_encode_calls": 4
+      },
+      "planned_effective_updates": 15000,
+      "planned_new_cases": 200,
+      "planned_new_updates": 15000,
+      "planned_reused_cases": 0,
+      "scientific_config": {
+        "ablation_variant": "complete",
+        "clip_max_norm": 120.0,
+        "controller_config": {
+          "beta_eval": 0.1,
+          "chi": 0.5,
+          "dmax": 3.0,
+          "ema_decay": 0.7,
+          "epsilon": 1e-08,
+          "model_mu": 0.5,
+          "model_temperature": 1.0,
+          "n_min": 1e-08,
+          "ratio_delta": 0.001,
+          "ratio_max": 2.0,
+          "ratio_min": 0.5,
+          "task_mu": 0.8,
+          "task_temperature": 1.0,
+          "theta": 0.3,
+          "uncertified_reference_policy": "unit_deficit_preserve_scene",
+          "vehicle_labels": [
+            3,
+            6,
+            8
+          ]
+        },
+        "depth_beta": 0.1,
+        "depth_models": [
+          "monodepth2",
+          "dpt_large"
+        ],
+        "depth_weight": 1.0,
+        "detector_models": [
+          "fasterrcnn",
+          "ssd300"
+        ],
+        "eot": {
+          "crop_side_fraction": [
+            0.9,
+            1.0
+          ],
+          "max_attempts": 50,
+          "padding_mode": "border",
+          "random_views": 1,
+          "rotation_degrees": [
+            -5.0,
+            5.0
+          ],
+          "scale_range": [
+            0.9,
+            1.1
+          ],
+          "translation_fraction": [
+            -0.05,
+            0.05
+          ]
+        },
+        "gradient_coefficient": 100000.0,
+        "gradient_combination": "two_task_fp32_periodic_balance_v1",
+        "guidance_scale": 4.5,
+        "latent_lr": 0.05,
+        "negative_prompt": "vehicle, car, obstacle",
+        "num_inference_steps": 100,
+        "outer_rounds": 3,
+        "prompt": "top-down aerial view of clean asphalt road surface",
+        "seed": 20260919,
+        "step_feedback_mode": "latent_chain",
+        "strength": 0.25,
+        "switches": {
+          "conflict_guard": true,
+          "depth_target": "at_least_beta",
+          "ema": true,
+          "model_adaptive": true,
+          "norm_match": true,
+          "period": 5,
+          "task_adaptive": true,
+          "task_balance": "unit_direction"
+        },
+        "weighting_rule": "periodic_gap_gated_foa_v1"
+      },
+      "updates_per_case": 75
+    },
+    "5": {
+      "SOURCE_counts_not_actual_runtime_facts": true,
+      "effective_cases": 200,
+      "outer_rounds": 5,
+      "per_new_case_application_budget": {
+        "autograd_calls": 250,
+        "depth_adv_forwards": 500,
+        "depth_clean_forwards": 500,
+        "detector_forwards": 502,
+        "noise_draws": 5,
+        "transformer_forward_calls": 125,
+        "vae_decode_calls": 256,
+        "vae_encode_calls": 6
+      },
+      "planned_effective_updates": 25000,
+      "planned_new_cases": 200,
+      "planned_new_updates": 25000,
+      "planned_reused_cases": 0,
+      "scientific_config": {
+        "ablation_variant": "complete",
+        "clip_max_norm": 120.0,
+        "controller_config": {
+          "beta_eval": 0.1,
+          "chi": 0.5,
+          "dmax": 3.0,
+          "ema_decay": 0.7,
+          "epsilon": 1e-08,
+          "model_mu": 0.5,
+          "model_temperature": 1.0,
+          "n_min": 1e-08,
+          "ratio_delta": 0.001,
+          "ratio_max": 2.0,
+          "ratio_min": 0.5,
+          "task_mu": 0.8,
+          "task_temperature": 1.0,
+          "theta": 0.3,
+          "uncertified_reference_policy": "unit_deficit_preserve_scene",
+          "vehicle_labels": [
+            3,
+            6,
+            8
+          ]
+        },
+        "depth_beta": 0.1,
+        "depth_models": [
+          "monodepth2",
+          "dpt_large"
+        ],
+        "depth_weight": 1.0,
+        "detector_models": [
+          "fasterrcnn",
+          "ssd300"
+        ],
+        "eot": {
+          "crop_side_fraction": [
+            0.9,
+            1.0
+          ],
+          "max_attempts": 50,
+          "padding_mode": "border",
+          "random_views": 1,
+          "rotation_degrees": [
+            -5.0,
+            5.0
+          ],
+          "scale_range": [
+            0.9,
+            1.1
+          ],
+          "translation_fraction": [
+            -0.05,
+            0.05
+          ]
+        },
+        "gradient_coefficient": 100000.0,
+        "gradient_combination": "two_task_fp32_periodic_balance_v1",
+        "guidance_scale": 4.5,
+        "latent_lr": 0.05,
+        "negative_prompt": "vehicle, car, obstacle",
+        "num_inference_steps": 100,
+        "outer_rounds": 5,
+        "prompt": "top-down aerial view of clean asphalt road surface",
+        "seed": 20260919,
+        "step_feedback_mode": "latent_chain",
+        "strength": 0.25,
+        "switches": {
+          "conflict_guard": true,
+          "depth_target": "at_least_beta",
+          "ema": true,
+          "model_adaptive": true,
+          "norm_match": true,
+          "period": 5,
+          "task_adaptive": true,
+          "task_balance": "unit_direction"
+        },
+        "weighting_rule": "periodic_gap_gated_foa_v1"
+      },
+      "updates_per_case": 125
+    }
+  },
+  "budget_order": [
+    1,
+    3,
+    5
+  ],
+  "conditioning_mode": "two_clip_no_t5_explicit",
+  "control_namespace": "/root/cg01_formal200_budget135_20261029_v1",
+  "cross_budget_checkpoint_continuation": false,
+  "current_EOT1_math_reference": "four original ACTUAL50 C1plans, changed onlyouter20to1; compare same config to acceptedold25",
+  "data_namespace": "/root/autodl-tmp/cg01_formal200_budget135_20261029_v1",
+  "each_budget_original200_same_order_seed_and_fresh_initialization": true,
+  "friendly_alias": "CG01",
+  "identity": "bevja_cg01_formal200_budget135_v1",
+  "inner_steps": 25,
+  "master_reference_origin": {
+    "bytes": 159899,
+    "path": "WORKSPACE_ROOT/11_远程运维脚本/ours_complete_eot1_parallel200_20261024_v1/science_prepare001/package/MASTER200_REFERENCE_001.json",
+    "sha256": "cca50857551d8125dc83a0c77de34fca955471b840e78dfdfea39a5059e3dc33"
+  },
+  "master_samples_sha256": "78fc617bcc0534c95288b6f1a91af5eb68707af49d2bcaa9b0a631788dc6a96a",
+  "master_scientific_config_is_historical_EOT3_reference_only": true,
+  "original_parts": [
+    {
+      "ordered_sample_ids": [
+        "kitti_000000",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489296512409",
+        "kitti_001034",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489305412404",
+        "kitti_003089",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489312362404",
+        "kitti_004994",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657113612404",
+        "kitti_006399",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657121112404",
+        "kitti_000046",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151604012404",
+        "kitti_000164",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151606512404",
+        "kitti_000275",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151609512404",
+        "kitti_001039",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151612862404",
+        "kitti_001309",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151615912404",
+        "kitti_001512",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151618412404",
+        "kitti_001642",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151621412404",
+        "kitti_002015",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385093612404",
+        "kitti_002434",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385095912404",
+        "kitti_002839",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385099862404",
+        "kitti_003070",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385103412404",
+        "kitti_003399",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385105912404",
+        "kitti_004442",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385109362404",
+        "kitti_004707",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385111412404",
+        "kitti_005390",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984236912460",
+        "kitti_005619",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984239412460",
+        "kitti_006444",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984242412460",
+        "kitti_006748",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984245412460",
+        "kitti_006863",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984248412460",
+        "kitti_007075",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984250412460"
+      ],
+      "original_plan": {
+        "bytes": 773439,
+        "path": "WORKSPACE_ROOT/11_远程运维脚本/ours_complete_eot1_parallel200_20261024_v1/current_custody_root50_actual001/worker0_ROOT50_003/tiny_originals/059_PLAN_FORMAL50_SHARD0_ACTUAL_001.json",
+        "sha256": "d060a000db970467e9c0a059a348e6f1614330512a87011a3d048c699c6e22d2"
+      },
+      "part_id": 0
+    },
+    {
+      "ordered_sample_ids": [
+        "kitti_000295",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489298012404",
+        "kitti_001894",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489306912404",
+        "kitti_003424",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489315412404",
+        "kitti_005190",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657115112404",
+        "kitti_006637",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657123112404",
+        "kitti_000097",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151604512404",
+        "kitti_000186",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151607012404",
+        "kitti_000563",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151609912404",
+        "kitti_001117",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151614412404",
+        "kitti_001351",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151616412404",
+        "kitti_001610",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151618912404",
+        "kitti_001671",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151622912404",
+        "kitti_002060",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385094512404",
+        "kitti_002633",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385097862411",
+        "kitti_002884",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385100862404",
+        "kitti_003180",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385103912404",
+        "kitti_003462",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385106912404",
+        "kitti_004513",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385109862404",
+        "kitti_004749",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984233512470",
+        "kitti_005411",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237412460",
+        "kitti_005765",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984239912460",
+        "kitti_006529",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984242912460",
+        "kitti_006749",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984245912460",
+        "kitti_006953",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984248912460",
+        "kitti_007156",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984251412460"
+      ],
+      "original_plan": {
+        "bytes": 772080,
+        "path": "WORKSPACE_ROOT/11_远程运维脚本/ours_complete_eot1_parallel200_20261024_v1/current_custody_crossgen50_writer_actual001/worker1_ROOT50_001/tiny_originals/077_PLAN_FORMAL50_SHARD1_ACTUAL_001.json",
+        "sha256": "74805b621993047c5c7244aa80695672566addcb2beec5ae969a9adaa5fdba07"
+      },
+      "part_id": 1
+    },
+    {
+      "ordered_sample_ids": [
+        "kitti_000633",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489300512404",
+        "kitti_002636",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489308362404",
+        "kitti_003954",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657108762404",
+        "kitti_005902",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657116612404",
+        "kitti_007200",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657125112404",
+        "kitti_000143",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151605012404",
+        "kitti_000192",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151607512404",
+        "kitti_000673",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151610912404",
+        "kitti_001119",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151614912404",
+        "kitti_001389",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151616912404",
+        "kitti_001613",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151619412404",
+        "kitti_001893",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385092112404",
+        "kitti_002119",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385094912404",
+        "kitti_002672",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385098362404",
+        "kitti_002902",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385101362404",
+        "kitti_003277",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385104912404",
+        "kitti_003625",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385107912404",
+        "kitti_004591",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385110412404",
+        "kitti_004760",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984234012472",
+        "kitti_005455",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984237912460",
+        "kitti_005965",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984240412460",
+        "kitti_006646",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243912460",
+        "kitti_006778",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984246412460",
+        "kitti_007067",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984249412460",
+        "kitti_007377",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984252412460"
+      ],
+      "original_plan": {
+        "bytes": 772081,
+        "path": "WORKSPACE_ROOT/11_远程运维脚本/ours_complete_eot1_parallel200_20261024_v1/current_custody_root50_actual001/worker2_ROOT50_001/tiny_originals/059_PLAN_FORMAL50_SHARD2_ACTUAL_001.json",
+        "sha256": "1ddc16249ccd2484752bf82eea016836917cdcb9be07009d7e12b5d64cfc1969"
+      },
+      "part_id": 2
+    },
+    {
+      "ordered_sample_ids": [
+        "kitti_000864",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489302512404",
+        "kitti_002951",
+        "nuscenes_n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489310362404",
+        "kitti_004478",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657111612404",
+        "kitti_006153",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657119612404",
+        "kitti_007260",
+        "nuscenes_n008-2018-08-30-15-16-55-0400__CAM_FRONT__1535657126612404",
+        "kitti_000155",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151606012404",
+        "kitti_000251",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151609012404",
+        "kitti_000708",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151611412404",
+        "kitti_001149",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151615412404",
+        "kitti_001481",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151617912404",
+        "kitti_001616",
+        "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151621012404",
+        "kitti_001984",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385092662404",
+        "kitti_002236",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385095412404",
+        "kitti_002808",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385098862404",
+        "kitti_002919",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385102912404",
+        "kitti_003334",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385105412404",
+        "kitti_003666",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385108412412",
+        "kitti_004617",
+        "nuscenes_n008-2018-08-27-11-48-51-0400__CAM_FRONT__1535385110912404",
+        "kitti_004909",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984235412460",
+        "kitti_005564",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984238912460",
+        "kitti_006149",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984240912467",
+        "kitti_006665",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984244912460",
+        "kitti_006825",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984247912460",
+        "kitti_007073",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984249912460",
+        "kitti_007416",
+        "nuscenes_n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984253412460"
+      ],
+      "original_plan": {
+        "bytes": 772084,
+        "path": "WORKSPACE_ROOT/11_远程运维脚本/ours_complete_eot1_parallel200_20261024_v1/current_custody_root50_actual001/worker3_ROOT50_001/tiny_originals/067_PLAN_FORMAL50_SHARD3_ACTUAL_001.json",
+        "sha256": "17ef591e69a821b8c168cfe7e1b04ef4abdfbe38112638879db342fe539b58ea"
+      },
+      "part_id": 3
+    }
+  ],
+  "original_sources_results_paper_modified": false,
+  "reset_seed_before_each_case": 20260919,
+  "reuse_case_ids": [
+    "kitti_000046",
+    "nuscenes_n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151604012404"
+  ],
+  "reuse_reference_source_only": {
+    "bytes": 20006,
+    "path": "WORKSPACE_ROOT/newformal200/reuse_reference_source_only_001.json",
+    "sha256": "342b246660d6935748efb7447c578962e501584ead2e3b35054f8d60e41e3ed2"
+  },
+  "schema": "cg01-formal200-budget135-source-protocol-v1",
+  "source_pins": {
+    "GPU_component": "fa7a76392b2218b70a9c46b1e187d4e7c9b01bda4f5b65a7fff9addf50879e1b",
+    "SCI1940": "1940406257965a181371af89634a7378433392147719a4b16ae28d7f33c9081d",
+    "derived_engine": "e7b6b31edb3050e7d9496b276d3fde21ffa68748b60efa7966059741642ca2ad",
+    "kernel": "946c415b14c8119e70b389f3ec3c03444e51dd854742878cd0cf191495c263cb",
+    "metric50bc": "50bcf1aad80ae902d6e660017b1614d83c9a8a085b6a6cbe02a5402e31752c81",
+    "sample_evaluate": "1ede9db59d17bed27cb74cefdc5b8edda35000dfaa2ccfbc61d441d2dc9495da"
+  },
+  "source_references": {
+    "preserved_derived_engine_SHA256": "abd6e8d9d679d24b91a77309d07971623a2aa881931f2dfe779c6b0f904c91e7",
+    "preserved_outer1_protocol": {
+      "bytes": 17657,
+      "path": "WORKSPACE_ROOT/11_远程运维脚本/cg01_formal200_outer1_20261028_v1/numerical/CG01_FORMAL200_OUTER1_SOURCE_PROTOCOL_002.json",
+      "sha256": "0f3024d4df8f1d3c4b9391f719f09cb42930d7d42e0a086095a9eca7cf76d8f1"
+    }
+  },
+  "split_scope": "original160train+40validationbothoptimized; noTEST/heldout",
+  "state": "SOURCE_ONLY_NOT_DEPLOYED_OR_EXECUTED",
+  "storage_source_plan": {
+    "actual_fresh_capacity_and_complete_budget_output_directory_mapping_required": true,
+    "cap_is_a_finite_execution_limit_not_a_theoretical_output_upper_bound": true,
+    "each_case_and_evaluation_model_before_after_guards": true,
+    "exceeding_or_unknown_output_fails_with_all_existing_originals_retained": true,
+    "no_dependency_on_USB_remaining_attached_during_long_run": true,
+    "no_output_truncation_or_implicit_deletion": true,
+    "policies": {
+      "ALL_RETAINED_12_36": {
+        "minimum_initial_free_bytes": 40802189312,
+        "per_budget_output_budget_bytes": {
+          "1": 12884901888,
+          "3": 12884901888,
+          "5": 12884901888
+        },
+        "reserve_bytes": 1073741824,
+        "whole_all_budgets_output_budget_bytes": 38654705664
+      },
+      "ALL_RETAINED_TIGHT_10_30": {
+        "minimum_initial_free_bytes": 34359738368,
+        "per_budget_output_budget_bytes": {
+          "1": 10737418240,
+          "3": 10737418240,
+          "5": 10737418240
+        },
+        "reserve_bytes": 1073741824,
+        "whole_all_budgets_output_budget_bytes": 32212254720
+      }
+    },
+    "preserved_resource_plan001": "48GiB total+1GiB reserve/50GiB initial SOURCE retained unchanged; not an external scientific constraint",
+    "resource_only_revision": 2,
+    "sequential_archival_policy_optional_only_after_new_explicit_authorization_and_actual_verified_custody": true
+  },
+  "tensors_RAW_native_CAS_fullinventory_serveronly": true,
+  "timing_source_contract": {
+    "legacy_reused2_missing_total_remains_null": true,
+    "model_load_is_phase_level_and_not_falsely_apportioned": true,
+    "per_case_core_and_sync_seconds": true,
+    "per_case_new_end_to_end_wall_seconds": true,
+    "per_case_preprocessing_and_condition_seconds": true
+  }
+}

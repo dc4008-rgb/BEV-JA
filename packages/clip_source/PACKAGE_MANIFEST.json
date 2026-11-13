@@ -1,0 +1,163 @@
+{
+  "schema": "r2-joint-clip120-code-package-v1",
+  "identity": "r2_joint_clip120_followup_20261004",
+  "prepared_date": "2026-10-04",
+  "scientific_status": "fixed_user_requested_post_evaluation_cap120_not_yet_run",
+  "files": [
+    {
+      "path": "BASELINE_REFERENCES.json",
+      "bytes": 48528,
+      "sha256": "01fed0fa0534700ebfd69dfc56004deb1df94f021876062548a119b4f5a07091"
+    },
+    {
+      "path": "FOLLOWUP_BINDINGS.json",
+      "bytes": 4360,
+      "sha256": "364a9ed17a14f9da389ad368571bec856950b4ad2f8b634e8d7160256fb24d1c"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 5130,
+      "sha256": "0a9ce321e28cbf100e0ab7072ddb1b0505e37172973ea19a5a6d39c3891ef4ed"
+    },
+    {
+      "path": "README_准备与执行.md",
+      "bytes": 2455,
+      "sha256": "c048ccc463721c87889c7077eedd3bc9e3fa6fa34a1931c4fb313535b9795146"
+    },
+    {
+      "path": "REFERENCE_BINDINGS.json",
+      "bytes": 1020,
+      "sha256": "e104c97b5c299dea0cd455b00a4f315121f522ffd1db8d001a95cf0fa5a31412"
+    },
+    {
+      "path": "UPSTREAM_BINDINGS.json",
+      "bytes": 5354,
+      "sha256": "6c167c1963c0ad1f97a28240db66268fa88ad665b98a31076192f343c4dc4c52"
+    },
+    {
+      "path": "build_baseline_references.py",
+      "bytes": 15051,
+      "sha256": "e10065aac2b47655960ee9cd4d366686ed4142b91cc64a487d66bb4340d30c70"
+    },
+    {
+      "path": "clip_audit_depth.py",
+      "bytes": 19074,
+      "sha256": "40b3da14d51a5c7c185eb3ec2a54e99a63027653c0fb17b7a4ba2e679a3daa37"
+    },
+    {
+      "path": "clip_audit_detection.py",
+      "bytes": 18738,
+      "sha256": "7110e7b1222a7d8b95a054153574c5c28de83c59eee5c84b13c9fecf20c31e7f"
+    },
+    {
+      "path": "clip_evaluate.py",
+      "bytes": 36770,
+      "sha256": "f6c7bdbd8809d088b3f734359bf312d39a5546eb104a75bb4ed8bfebd2481f55"
+    },
+    {
+      "path": "clip_evidence.py",
+      "bytes": 6375,
+      "sha256": "efb6d14b57819d3d49922f99bd8c3ab5fdfe3da61f52fc8ced28a879ae2b53f4"
+    },
+    {
+      "path": "clip_training.py",
+      "bytes": 43148,
+      "sha256": "51e30f63de8035197c29513c30e746649e4962e1d41423a12f225b7ceb7b3eb6"
+    },
+    {
+      "path": "clip_update.py",
+      "bytes": 8109,
+      "sha256": "334df94ba59784b4f6f2d653ff523e8ff3e62ceb79e784671a7d63e25e915cb8"
+    },
+    {
+      "path": "collect_cap120.py",
+      "bytes": 27559,
+      "sha256": "aac9e38403ece2cf2dc89e735dda510153f304c53d9d9f6521129edaad2888a7"
+    },
+    {
+      "path": "compare_sweep.py",
+      "bytes": 15659,
+      "sha256": "fefdf07637513c6d32dfbc5c6844813bd0be44622cf4a7fd4ecc06d626415a62"
+    },
+    {
+      "path": "followup_contract.py",
+      "bytes": 20778,
+      "sha256": "ac227a16fea1f4cdb64b1dc02b02eeeb8ab1d79f596b6a990a52787fd27227ea"
+    },
+    {
+      "path": "freeze_followup_plan.py",
+      "bytes": 1653,
+      "sha256": "460d59aac74d681b75b478e56933c7af8d699ad36d08eb4bb7a3a48e5025ccf6"
+    },
+    {
+      "path": "freeze_train_grid.py",
+      "bytes": 882,
+      "sha256": "dc9756b0d3e5e167e717793d2df0489df9d0b12d352595152d3fd031987290e3"
+    },
+    {
+      "path": "prepare_commands.py",
+      "bytes": 12399,
+      "sha256": "329952047e6c692e0a668595ff2673cf84a91347ee4d5e2e72ef846edbba2dd0"
+    },
+    {
+      "path": "reference_long_training.py",
+      "bytes": 48791,
+      "sha256": "1aecce1c0ddcdd5f99cb949957db9e34f1dcebfd91f3caebdf6919e17880ed47"
+    },
+    {
+      "path": "test_cap120_fixtures.py",
+      "bytes": 1071,
+      "sha256": "dc2c43d92d1833974dae6a4dc11352fb809d37077a0f8e8e95e9e9d4befd41ee"
+    },
+    {
+      "path": "test_clip_evaluation.py",
+      "bytes": 19353,
+      "sha256": "ee19daec20650c37d5b09400e5df03302c2ed45b482308649c8d4c3c1c054814"
+    },
+    {
+      "path": "test_clip_evidence.py",
+      "bytes": 2429,
+      "sha256": "6751256dc605cfeb1e7807a1a3e42a2dd43ef3e2255ea39493dcc349b0ce169e"
+    },
+    {
+      "path": "test_clip_training.py",
+      "bytes": 2524,
+      "sha256": "c2f235cdbc39b2d19a7cedbc208e54c84ecce2b8180e771457d187965fda43ec"
+    },
+    {
+      "path": "test_clip_update.py",
+      "bytes": 11592,
+      "sha256": "832dc8f3287ce5dc5da59095ff5acb55c619c898ac1e6c16a9a36982e89d457c"
+    },
+    {
+      "path": "test_collect_cap120.py",
+      "bytes": 17506,
+      "sha256": "6dae76f036c34a594af2a68c88c7b065706e0be79f9b7ccf24e64482681826ba"
+    },
+    {
+      "path": "test_compare_sweep.py",
+      "bytes": 12031,
+      "sha256": "80b8d836964e73dbe7088280fbec901371f1a9038d37bf32d27a6b2b0427dbaf"
+    },
+    {
+      "path": "test_followup_contract.py",
+      "bytes": 12793,
+      "sha256": "4d0c063346c9a348e052c8993406e5ae41ada3f4c11ead22d06a3ce3dfa88d4d"
+    },
+    {
+      "path": "test_prepare_commands.py",
+      "bytes": 6975,
+      "sha256": "0f3b8939f9ebb0c2cdb9b9c98b00604f9063e4d095671bbd889665d67fdb1cd4"
+    },
+    {
+      "path": "test_train_norm_grid.py",
+      "bytes": 10313,
+      "sha256": "bd85e375ca7ef57fcc4d13d379fa2ad058373f3e2f2197b9f0c0197761a0a9d3"
+    },
+    {
+      "path": "train_norm_grid.py",
+      "bytes": 14799,
+      "sha256": "3fd87c603980ee6d66d6ef00668d86b6f97d4ea48a98b03317c49fe0fb784838"
+    }
+  ]
+}

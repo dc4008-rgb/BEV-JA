@@ -1,0 +1,85 @@
+{
+ "note": "Extracted without change from protocol/PROTOCOL.json -> budget_configurations[\"5\"].scientific_config: the configuration of the reported BEV-JA runs (5 outer rounds x 25 latent updates).",
+ "scientific_config": {
+  "ablation_variant": "complete",
+  "clip_max_norm": 120.0,
+  "controller_config": {
+   "beta_eval": 0.1,
+   "chi": 0.5,
+   "dmax": 3.0,
+   "ema_decay": 0.7,
+   "epsilon": 1e-08,
+   "model_mu": 0.5,
+   "model_temperature": 1.0,
+   "n_min": 1e-08,
+   "ratio_delta": 0.001,
+   "ratio_max": 2.0,
+   "ratio_min": 0.5,
+   "task_mu": 0.8,
+   "task_temperature": 1.0,
+   "theta": 0.3,
+   "uncertified_reference_policy": "unit_deficit_preserve_scene",
+   "vehicle_labels": [
+    3,
+    6,
+    8
+   ]
+  },
+  "depth_beta": 0.1,
+  "depth_models": [
+   "monodepth2",
+   "dpt_large"
+  ],
+  "depth_weight": 1.0,
+  "detector_models": [
+   "fasterrcnn",
+   "ssd300"
+  ],
+  "eot": {
+   "crop_side_fraction": [
+    0.9,
+    1.0
+   ],
+   "max_attempts": 50,
+   "padding_mode": "border",
+   "random_views": 1,
+   "rotation_degrees": [
+    -5.0,
+    5.0
+   ],
+   "scale_range": [
+    0.9,
+    1.1
+   ],
+   "translation_fraction": [
+    -0.05,
+    0.05
+   ]
+  },
+  "gradient_coefficient": 100000.0,
+  "gradient_combination": "two_task_fp32_periodic_balance_v1",
+  "guidance_scale": 4.5,
+  "latent_lr": 0.05,
+  "negative_prompt": "vehicle, car, obstacle",
+  "num_inference_steps": 100,
+  "outer_rounds": 5,
+  "prompt": "top-down aerial view of clean asphalt road surface",
+  "seed": 20260919,
+  "step_feedback_mode": "latent_chain",
+  "strength": 0.25,
+  "switches": {
+   "conflict_guard": true,
+   "depth_target": "at_least_beta",
+   "ema": true,
+   "model_adaptive": true,
+   "norm_match": true,
+   "period": 5,
+   "task_adaptive": true,
+   "task_balance": "unit_direction"
+  },
+  "weighting_rule": "periodic_gap_gated_foa_v1"
+ },
+ "inner_steps": 25,
+ "conditioning_mode": "two_clip_no_t5_explicit",
+ "reset_seed_before_each_case": 20260919
+}

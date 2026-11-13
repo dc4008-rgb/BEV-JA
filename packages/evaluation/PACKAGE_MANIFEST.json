@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "bytes": 7438,
+      "path": "ablation_evaluation_bridge.py",
+      "sha256": "edd3b14342f45241c99270f826c0682c66c2b67298580dd6444ea79b2530ed1f"
+    },
+    {
+      "bytes": 8549,
+      "path": "artifact_io.py",
+      "sha256": "91ac6518d236ca821759c4f61252706474dc4255fbc3aca6e244a81037a5274e"
+    },
+    {
+      "bytes": 19474,
+      "path": "dependency_bootstrap.py",
+      "sha256": "9899d891ffe5c7ca1e036ac5cdd4fff6b3684d8908dc7977a0c013b5ba4894dc"
+    },
+    {
+      "bytes": 25727,
+      "path": "eight_target_library.py",
+      "sha256": "ec0f4976698ac0c7f0a40721872ed96fb17811b2be89da77b9d464e27b6af703"
+    },
+    {
+      "bytes": 3243,
+      "path": "eval_contract.py",
+      "sha256": "cc7959842ea90dfeafc21ecb868af7eb3e27e28cd2553597c031bb823a9c2fb2"
+    },
+    {
+      "bytes": 9132,
+      "path": "evaluate_ablation_full8.py",
+      "sha256": "b002879e289dadfc9af2dc3494101858d0012f720c53bf65610749e4664b2b72"
+    },
+    {
+      "bytes": 3210,
+      "path": "runtime_admission.py",
+      "sha256": "3163307a3a28f774b3ae670d1dca4ee81df3db6eb0b7c3eb3714c117910e4ace"
+    },
+    {
+      "bytes": 14412,
+      "path": "verify_ablation_full8_cpu.py",
+      "sha256": "40fd4993ecf442f95c281c17eec82498171b244e3b81a017aca71c345128fd7e"
+    },
+    {
+      "bytes": 14534,
+      "path": "yolov5_target.py",
+      "sha256": "c43ecf14b40d44bd28807213d91bb5e862da09f1362afc772cf7a87d22f14862"
+    }
+  ],
+  "identity": "ours5_b3_full_nuscenes100_fresh200_125_20261104_v1",
+  "schema": "ours5-no-norm-match-derived-source-package-v1"
+}

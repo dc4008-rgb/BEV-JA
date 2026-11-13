@@ -1,0 +1,24 @@
+# Versions installed on the experiment machine (Python 3.12.3, Linux x86_64, CUDA 12.8 build of PyTorch).
+# PyTorch wheels come from https://download.pytorch.org/whl/cu128
+torch==2.8.0
+torchvision==0.23.0
+diffusers==0.38.0
+transformers==5.7.0
+tokenizers==0.22.2
+accelerate==1.13.0
+safetensors==0.8.0rc0
+huggingface_hub==1.10.1
+timm==1.0.26
+numpy==2.3.2
+Pillow==12.2.0
+opencv-python==4.13.0.92
+scipy==1.17.1
+lpips==0.1.4
+matplotlib==3.10.5
+sentencepiece==0.2.1
+protobuf==6.31.1
+kornia==0.8.2
+einops==0.8.2
+PyYAML==6.0.2
+tqdm==4.68.2
+pandas==3.0.2

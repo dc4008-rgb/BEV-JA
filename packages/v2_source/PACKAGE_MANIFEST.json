@@ -1,0 +1,55 @@
+{
+  "schema": "r2-joint-depth-candidate-v2",
+  "files": [
+    {
+      "path": "joint_training.py",
+      "bytes": 37356,
+      "sha256": "a48122b0ab755b98ee5e88b8280474ee1216da6f4c1807ebc3e3883182fbfe3b"
+    },
+    {
+      "path": "test_joint_training.py",
+      "bytes": 13750,
+      "sha256": "9007b7db3f202e72dce25a074e9d06fc0380b5da686ec09496495a74fd04d3da"
+    },
+    {
+      "path": "depth_objective.py",
+      "bytes": 10542,
+      "sha256": "dcb5c7944632608317aa639a2779edbdeb469028076e3dd6c48a1388bea25fa5"
+    },
+    {
+      "path": "test_depth_objective.py",
+      "bytes": 15201,
+      "sha256": "68a2353d4518e1a80b62a121b858bf8031daeee7bc0baaf0d669b3d284cb167d"
+    },
+    {
+      "path": "depth_spatial.py",
+      "bytes": 8142,
+      "sha256": "7794922eb89c76638c41f6b4066c300f4e58751005ca3174aac11adfd02952e5"
+    },
+    {
+      "path": "test_depth_spatial.py",
+      "bytes": 6594,
+      "sha256": "89b0199961d0481418c6d385ac08b6af7995de65e4678ce60a40ef93d9ab6401"
+    },
+    {
+      "path": "probe_joint.py",
+      "bytes": 9138,
+      "sha256": "4401919280ab8f19eeaaf92be679b52fa67b8d3cc2a014a3c08e129f84f37669"
+    },
+    {
+      "path": "run_cpu_checks.py",
+      "bytes": 1354,
+      "sha256": "0ed3c498f2e4afe4254ff3fe31748f8de3de05c2f40a30d9c5be2a3bad1fbd9a"
+    },
+    {
+      "path": "compare_zero.py",
+      "bytes": 3970,
+      "sha256": "6bde4c22d83fe46d04981bb35b2a1b459e456922d9f6c32001769bb56d898d01"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4693,
+      "sha256": "be69280dec4e42d7b2e7871ce34fb44548e4746d9ebce21a8d038163908f0692"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "identity": "meeting_full_repeat_20260924_r2",
+  "formal_test_allowed": false,
+  "historical_child_manifest_sha256": "a4ee2aab2ab40fe9c122c16bc05fd5a32cbd06286413384f4ad4086c26b863cb",
+  "previous_implementation_manifest_sha256": "ca0648d47027058adf004c7b8a54ac3f6349469f6cb74c9c501658282a474107",
+  "files": [
+    {
+      "path": "IMPLEMENTATION_REVISION.md",
+      "bytes": 3417,
+      "sha256": "b41cfaedcf7f49dcd45a40df7fa8eaa315d5e2b0d111b3269a95399149f57909"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4166,
+      "sha256": "6104764ae7291cd1c9131c2291ba47c99daad43116830abfc97542d1f66b195f"
+    },
+    {
+      "path": "adaptive_loss.py",
+      "bytes": 6542,
+      "sha256": "80b4dec083f33a8792b2744d71a540cb63560a20877964754c26e39a5da02951"
+    },
+    {
+      "path": "compare.py",
+      "bytes": 17448,
+      "sha256": "60c4e38bce94f886b5b95723ad3c633373f22a586b8fe3d22eadb50872b65ff1"
+    },
+    {
+      "path": "components.py",
+      "bytes": 4904,
+      "sha256": "c2a80a2fb0dde3cdbb7df701365ef484b79ac781a38487fccf9aa729ddd89bc8"
+    },
+    {
+      "path": "eot_config.json",
+      "bytes": 215,
+      "sha256": "b246bb587fe314d9b9f008c4c9928a36f421e8c6abd4b980be640b629365e4bd"
+    },
+    {
+      "path": "evaluate.py",
+      "bytes": 15749,
+      "sha256": "9560130cf0115cd2248015a6d9d9704d2f02b7c00aa84b8b5268cd77ea450038"
+    },
+    {
+      "path": "evidence.py",
+      "bytes": 9092,
+      "sha256": "018434264218ce85a8f28f601e557a405c21900e68f51eef07767bd90fb3062e"
+    },
+    {
+      "path": "geometry_eot.py",
+      "bytes": 13931,
+      "sha256": "5e914c42f377e539d8cacc8538d0ae21e63de99b6f1516954e43565667a3a27d"
+    },
+    {
+      "path": "projection_cpu_backward.py",
+      "bytes": 5701,
+      "sha256": "e1257baec9d6e93353a16f4505be0eab8e2af50ed738f0be0309893e024ee588"
+    },
+    {
+      "path": "reference_geometry_eot.py",
+      "bytes": 13800,
+      "sha256": "5a4c3f94515a24f4dcdd2ad2177653342fbec2d46b0d4e92abb1765f3c2d7855"
+    },
+    {
+      "path": "run_batch.py",
+      "bytes": 8335,
+      "sha256": "e648b5f8169c985bcafc3044f12da3ba6d63885c353d4ad7169c855d58dd2906"
+    },
+    {
+      "path": "scale_update.py",
+      "bytes": 4100,
+      "sha256": "84216d2e3cc2c759c0d2cc97be6f42e35f18a0ce57027899a4870e73ab58e777"
+    },
+    {
+      "path": "test_compare_evaluate.py",
+      "bytes": 11002,
+      "sha256": "3f8de2d584166e20e912cdcb53043daf39e8914286dd643052fc7d33680ecaa9"
+    },
+    {
+      "path": "test_projection_cpu_backward.py",
+      "bytes": 2107,
+      "sha256": "b775a7c23aa0edb178739b2121c05397b30b2b8696e2794e1e0515b48560372e"
+    },
+    {
+      "path": "test_training.py",
+      "bytes": 11430,
+      "sha256": "be5129f35f6805ee9c0ec56c7d27a61908a54aecbf51f44a5cf6f2cc667f0dd3"
+    },
+    {
+      "path": "training.py",
+      "bytes": 30495,
+      "sha256": "6800171b28c031f001adfc57e09c5d66e5c2c8ac83dbcd5d36393e8676a8314b"
+    },
+    {
+      "path": "会议六点执行约定_20260924.md",
+      "bytes": 8982,
+      "sha256": "fe9f0009504d49553b6dd2bf817df710efa633d0b7727d4be952d8b0801ff55b"
+    }
+  ]
+}

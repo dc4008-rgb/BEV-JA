@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "b3_full_nuscenes100",
+    "method_id": "ours5_b3_full_nuscenes100",
+    "namespace": "ours5_b3_full_nuscenes100_20261105_001",
+    "node_id": "b3_m1",
+    "science": "b3_full_nuscenes100_science_v1",
+    "evaluation": "b3_full_nuscenes100_evaluation_v2",
+    "switch_changes": {},
+    "label": "B3 Full nuScenes-100 pilot",
+    "parts": [
+      0,
+      1
+    ],
+    "b3_index": 0
+  }
+]

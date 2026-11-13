@@ -1,0 +1,286 @@
+{
+  "schema_version": 2,
+  "status": "candidate_bound_requires_live_validation",
+  "candidate_id": "normalized-v9-20260916",
+  "runtime": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "transformers": "4.46.3",
+    "huggingface_hub": "0.36.2",
+    "tokenizers": "0.20.3",
+    "timm": "1.0.26",
+    "binding_status": "must_be_reverified_on_remote"
+  },
+  "input_contract": {
+    "scene_canvas": [
+      320,
+      1024
+    ],
+    "color": "RGB_float_0_1",
+    "per_model_preprocessing": true
+  },
+  "auxiliary_models": [
+    {
+      "id": "advrm_vgg19",
+      "task": "perceptual_regularization",
+      "role": "frozen_auxiliary",
+      "architecture": "vgg19_features",
+      "library": "torchvision",
+      "weights_enum": "VGG19_Weights.IMAGENET1K_V1",
+      "weights_url": "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth",
+      "artifact": {
+        "path": "/root/.cache/torch/hub/checkpoints/vgg19-dcbb9e9d.pth",
+        "sha256_prefix": "dcbb9e9d",
+        "full_sha256_policy": "computed_and_recorded_in_run_metadata"
+      },
+      "source_dependency": {
+        "repository": "Bob-cheng/MDE_Attack",
+        "commit": "85a8f141d2a0a07d638af4ddce423875ba1a6630",
+        "path": "DeepPhotoStyle_pytorch/model.py",
+        "blob": "f932d17f766a9378040286ea2619b1cbe2e5996f"
+      }
+    }
+  ],
+  "model_order": [
+    "fasterrcnn",
+    "ssd300",
+    "monodepth2",
+    "dpt_large",
+    "maskrcnn",
+    "fcos",
+    "depth_anything_v1",
+    "zoedepth"
+  ],
+  "models": [
+    {
+      "id": "fasterrcnn",
+      "task": "detection",
+      "role": "core",
+      "architecture": "fasterrcnn_resnet50_fpn",
+      "library": "torchvision",
+      "weights_enum": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+      "weights_url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+      "adapter": {
+        "min_size": 320,
+        "max_size": 1024,
+        "box_score_thresh": 0.0001,
+        "box_detections_per_img": 1000
+      },
+      "output_contract": "COCO vehicle-family labels 3,6,8; pre-evaluation detections",
+      "artifacts": [
+        {
+          "path": "/root/.cache/torch/hub/checkpoints/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+          "bytes": 167502836,
+          "sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification"
+    },
+    {
+      "id": "ssd300",
+      "task": "detection",
+      "role": "core",
+      "architecture": "ssd300_vgg16",
+      "library": "torchvision",
+      "weights_enum": "SSD300_VGG16_Weights.COCO_V1",
+      "weights_url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+      "adapter": {
+        "score_thresh": 0.0001,
+        "topk_candidates": 2000,
+        "detections_per_img": 1000
+      },
+      "output_contract": "COCO vehicle-family labels 3,6,8; pre-evaluation detections",
+      "artifacts": [
+        {
+          "path": "/root/.cache/torch/hub/checkpoints/ssd300_vgg16_coco-b556d3b4.pth",
+          "bytes": 142594222,
+          "sha256": "b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification"
+    },
+    {
+      "id": "maskrcnn",
+      "task": "detection",
+      "role": "transfer",
+      "architecture": "maskrcnn_resnet50_fpn_v2",
+      "library": "torchvision",
+      "weights_enum": "MaskRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+      "weights_url": "https://download.pytorch.org/models/maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+      "adapter": {
+        "min_size": 320,
+        "max_size": 1024,
+        "box_score_thresh": 0.0001,
+        "box_detections_per_img": 1000
+      },
+      "output_contract": "COCO vehicle-family labels 3,6,8; box branch only",
+      "artifacts": [
+        {
+          "path": "/root/.cache/torch/hub/checkpoints/maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+          "bytes": 185828065,
+          "sha256": "73cbd0190fcbe3ba339921fbce2c3a0b6bb9126c9a133c85e43a2a8e060a109e"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification"
+    },
+    {
+      "id": "fcos",
+      "task": "detection",
+      "role": "transfer",
+      "architecture": "fcos_resnet50_fpn",
+      "library": "torchvision",
+      "weights_enum": "FCOS_ResNet50_FPN_Weights.COCO_V1",
+      "weights_url": "https://download.pytorch.org/models/fcos_resnet50_fpn_coco-99b0c9b7.pth",
+      "adapter": {
+        "min_size": 320,
+        "max_size": 1024,
+        "score_thresh": 0.0001,
+        "topk_candidates": 2000,
+        "detections_per_img": 1000
+      },
+      "output_contract": "COCO vehicle-family labels 3,6,8; held-out anchor-free detector",
+      "artifacts": [
+        {
+          "path": "/root/.cache/torch/hub/checkpoints/fcos_resnet50_fpn_coco-99b0c9b7.pth",
+          "bytes": 129612099,
+          "sha256": "99b0c9b7cfb1527d782db86b91d207f00547c792fb4103fc612b651d0a07b9e7"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification"
+    },
+    {
+      "id": "monodepth2",
+      "task": "depth",
+      "role": "core",
+      "architecture": "ResNet18_mono_1024x320",
+      "library": "nianticlabs/monodepth2",
+      "repository": {
+        "path": "/root/autodl-tmp/normalized_reproduction_20260904/02_模型/monodepth2",
+        "commit": "b676244e5a1ca55564eb5d16ab521a48f823af31"
+      },
+      "preprocessing": "RGB resize 1024x320; ImageNet normalization inside encoder",
+      "output_contract": "official disp_to_depth with min_depth=0.1 and max_depth=100; positive relative depth",
+      "artifacts": [
+        {
+          "path": "/root/autodl-tmp/normalized_reproduction_20260904/02_模型/monodepth2/models/mono_1024x320/encoder.pth",
+          "bytes": 46819014,
+          "sha256": "1f3b256bdecd6fc5ec373ff241631726f0ab67ec246e9fdda822ae6f251aac96"
+        },
+        {
+          "path": "/root/autodl-tmp/normalized_reproduction_20260904/02_模型/monodepth2/models/mono_1024x320/depth.pth",
+          "bytes": 12617260,
+          "sha256": "60a8e9e663ac7450d4849c13feff871fa8d0b7891fe7c0f1018de54a74d76f96"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification",
+      "training_output_contract": "positive mono-scale-ambiguous depth; larger means farther"
+    },
+    {
+      "id": "dpt_large",
+      "task": "depth",
+      "role": "core",
+      "architecture": "DPTForDepthEstimation_ViT-Large",
+      "library": "transformers_or_author_release_to_freeze",
+      "repository": {
+        "model_id": "Intel/dpt-large",
+        "revision": "bc15f29aa3a80d532f2ed650b5e16ac48d8958f9",
+        "snapshot_path": "/root/autodl-tmp/hf_cache/hub/models--Intel--dpt-large/snapshots/bc15f29aa3a80d532f2ed650b5e16ac48d8958f9"
+      },
+      "preprocessing": "bound preprocessor_config.json; tensor-only differentiable adapter must pass processor parity smoke",
+      "output_contract": "relative inverse depth; larger means nearer; native output resized bilinearly without reciprocal",
+      "training_output_contract": "relative inverse depth; farther direction is decreasing output",
+      "artifacts": [
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--Intel--dpt-large/snapshots/bc15f29aa3a80d532f2ed650b5e16ac48d8958f9/config.json",
+          "bytes": 942,
+          "sha256": "93aa698ce1f8e886160f760677fdc2c8c956da072735c44cbe1244d78e41c98e"
+        },
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--Intel--dpt-large/snapshots/bc15f29aa3a80d532f2ed650b5e16ac48d8958f9/model.safetensors",
+          "bytes": 1367456044,
+          "sha256": "c173e7fd575c4d6c2164621063fed3a0e7e2eb6adbfb7c1845b364bc0fed9ce8"
+        },
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--Intel--dpt-large/snapshots/bc15f29aa3a80d532f2ed650b5e16ac48d8958f9/preprocessor_config.json",
+          "bytes": 285,
+          "sha256": "42e2f4e243da22ec0090fc525a6774dfc641bdd95be9b02e1c07aa97fdd6d8fa"
+        }
+      ],
+      "binding_status": "bound_requires_live_output_and_gradient_validation"
+    },
+    {
+      "id": "depth_anything_v1",
+      "task": "depth",
+      "role": "transfer",
+      "architecture": "DepthAnythingForDepthEstimation_ViT-Large",
+      "library": "transformers",
+      "repository": {
+        "model_id": "LiheYoung/depth-anything-large-hf",
+        "revision": "27ccb0920352c0c37b3a96441873c8d37bd52fb6"
+      },
+      "preprocessing": "frozen DPTImageProcessor config: resize 518x518, keep aspect ratio, ImageNet normalize, ensure multiple of 14",
+      "output_contract": "legacy transfer-output path converts relative inverse depth to reciprocal relative depth",
+      "evaluation_output_contract": "native relative inverse depth resized with bilinear align_corners=false; no reciprocal, epsilon clamp, metric clipping, or pixel filtering",
+      "artifacts": [
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--LiheYoung--depth-anything-large-hf/snapshots/27ccb0920352c0c37b3a96441873c8d37bd52fb6/model.safetensors",
+          "bytes": 1341322868,
+          "sha256": "bc27360a3e6906e5ddd8f618e2dcde11362327361918b8f76793e42e25de31b3"
+        },
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--LiheYoung--depth-anything-large-hf/snapshots/27ccb0920352c0c37b3a96441873c8d37bd52fb6/config.json",
+          "bytes": 1433,
+          "sha256": "0e06ef1e45848a429717772dae0a27877781ae413dc03682138f145fd1c46364"
+        },
+        {
+          "path": "/root/autodl-tmp/hf_cache/hub/models--LiheYoung--depth-anything-large-hf/snapshots/27ccb0920352c0c37b3a96441873c8d37bd52fb6/preprocessor_config.json",
+          "bytes": 437,
+          "sha256": "533b16a60445d7cab5086d39b45f92be45624b977972c62d5984d93e98366063"
+        }
+      ],
+      "binding_status": "inherited_identity_requires_live_reverification"
+    },
+    {
+      "id": "zoedepth",
+      "task": "depth",
+      "role": "transfer",
+      "architecture": "ZoeD_K",
+      "library": "isl-org/ZoeDepth_author_release",
+      "repository": {
+        "path": "/root/autodl-tmp/model_bindings_v9_20260916/ZoeDepth-clean",
+        "commit": "d87f17b2f5fdcb174cf4fb115491f4a6c60de152",
+        "midas_path": "/root/autodl-tmp/model_bindings_v9_20260916/MiDaS-clean",
+        "midas_commit": "454597711a62eabcbf7d1e89f3fb9f569051ac9b"
+      },
+      "preprocessing": "official ZoeD_K KITTI config (384x768, max_depth=80m), official infer padding and horizontal-flip augmentation",
+      "output_contract": "positive metric depth in meters, larger means farther; transfer evaluation only",
+      "artifacts": [
+        {
+          "path": "/root/autodl-tmp/hf_zoe_mirror/ZoeD_M12_K.pt",
+          "bytes": 1443421075,
+          "sha256": "2f8e54f8de353c8e745ee2c8de03bf2181b7828c32211bb9efd7254a57a2df16"
+        }
+      ],
+      "binding_status": "bound_requires_live_output_validation",
+      "official_release_asset": {
+        "url": "https://github.com/isl-org/ZoeDepth/releases/download/v1.0/ZoeD_M12_K.pt",
+        "bytes": 1443421075,
+        "sha256": "2f8e54f8de353c8e745ee2c8de03bf2181b7828c32211bb9efd7254a57a2df16",
+        "official_response_content_md5": "e5f7c2cf364ef31434d5d7c19c08c482"
+      }
+    }
+  ],
+  "unresolved_bindings": [
+    "live DPT processor parity, output semantics and nonzero-gradient validation",
+    "live official ZoeD_K strict-load, 80m contract and deterministic inference validation",
+    "live re-verification of all inherited model artifacts"
+  ],
+  "historical_model_exclusion": {
+    "ids": [
+      "midas",
+      "adabins"
+    ],
+    "policy": "historical evidence only; forbidden in normalized-v9 run matrix and new main table"
+  }
+}

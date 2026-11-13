@@ -1,0 +1,638 @@
+{
+  "identity": "normalized-v29-c0-u1-lr005-20260922",
+  "formal_test_allowed": false,
+  "test_data_included": false,
+  "real_gpu_execution_complete": false,
+  "files": [
+    {
+      "path": "LOCAL_VALIDATION.json",
+      "bytes": 712,
+      "sha256": "8e7fc85fa39b78127991cdfc552176bbd26abac8bf4ed837606a44a7fe2bbcf3"
+    },
+    {
+      "path": "README_中文.md",
+      "bytes": 219,
+      "sha256": "a33255206c6605e9cba6fb8353a429ce601ba8055687aea2b16104b2ca60a343"
+    },
+    {
+      "path": "REVIEW.json",
+      "bytes": 1157,
+      "sha256": "1f658a769d564d5676bb4679e45331ddba93551caba5b1357628cd39a3a10377"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 253,
+      "sha256": "ce6055cdc2f45ab597d922eb118dabf6cf0a6d78a702f85240752796f76f3170"
+    },
+    {
+      "path": "local_checks/RESULT.json",
+      "bytes": 712,
+      "sha256": "8e7fc85fa39b78127991cdfc552176bbd26abac8bf4ed837606a44a7fe2bbcf3"
+    },
+    {
+      "path": "local_checks/suite.log",
+      "bytes": 9055,
+      "sha256": "6fe44299301849bd6f18d348e46517c755b2f9eeed03a7ca348acb79e3f4a5dc"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/FULL_VALIDATION_PLAN.md",
+      "bytes": 3996,
+      "sha256": "4c9744a27bd121671e935ea2ad1a48581eae19c364b5eebe95e542852afc3153"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/full_validation_v17.json",
+      "bytes": 15684,
+      "sha256": "9c838a0e12500bfa53f2f530b3ada96b0abbfece50290c4e4a72068993f888c7"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/ours_road_v16_candidate/README.md",
+      "bytes": 4224,
+      "sha256": "8929830de6004c7e8ee7710cbda7a6e5d4629b19fce46df920e0548d39cf10c3"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/ours_road_v16_candidate/det-only.json",
+      "bytes": 2028,
+      "sha256": "243701f9611e76836c7201b09240a9774bfebfcf128e2442f4f529040a9984ba"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/ours_road_v16_candidate/dual.json",
+      "bytes": 2129,
+      "sha256": "cdfaf00afc734f127a04f7376f79c8b31eb66afd26b2f69154e72741941db2cf"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/parent_lineage.json",
+      "bytes": 6763,
+      "sha256": "a458bece1eead711e247f049935abdb7791fc7c0fdc9635176215d8b92348a53"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/protocol_runtime.py",
+      "bytes": 25860,
+      "sha256": "460109c275e0eb018e7000e9ab1db5d89c2c5f5760a44effea3998771ed1a982"
+    },
+    {
+      "path": "parent_v17/00_冻结协议/sd35_snapshot_inventory.json",
+      "bytes": 3963,
+      "sha256": "0c21d98782b4a88f524b9377d779d7143d51fea72f390f068f479caeed36b1dc"
+    },
+    {
+      "path": "parent_v17/01_公共数据集/advrm_insertion.py",
+      "bytes": 6177,
+      "sha256": "912177132c0872b7207b224fcd262c820c0bec63ead81abb4ecaadfec17904fb"
+    },
+    {
+      "path": "parent_v17/01_公共数据集/car_00.jpg",
+      "bytes": 542452,
+      "sha256": "f0edb7f67cb4b697511d68ae39adc1a53bb0ce0c32a87b1306d16c488ea0f5d7"
+    },
+    {
+      "path": "parent_v17/01_公共数据集/car_00_mask.jpg",
+      "bytes": 63981,
+      "sha256": "c285e5c88cc48f1fca8194f2c587251192750bc433c701843c5ac57c32b396b1"
+    },
+    {
+      "path": "parent_v17/01_公共数据集/runtime_v1/train_validation_manifest.csv",
+      "bytes": 103960,
+      "sha256": "38ae14801d2e330236bd7b408f08ef29c5f93b4e802c6a8f2414a5a352ceb23f"
+    },
+    {
+      "path": "parent_v17/02_模型/model_adapters.py",
+      "bytes": 43839,
+      "sha256": "6650c4510d8651d1bb68d779b6c544e052cf3d8f7a0b4bf7dd2fd7c83ebe6fc0"
+    },
+    {
+      "path": "parent_v17/02_模型/model_manifest.json",
+      "bytes": 11753,
+      "sha256": "d994315183884c678c35e1b4cdb03c0b459b74ba27fd16bc95e3c17717c0b5dc"
+    },
+    {
+      "path": "parent_v17/03_方法/production/ROAD_DETECTION_LOSS_CONTRACT.md",
+      "bytes": 5194,
+      "sha256": "0f25700c7f3ad0e758e99c43ddc596501d7f6b47454a8839942f508ab73f1f63"
+    },
+    {
+      "path": "parent_v17/03_方法/production/advrm_regularizer.py",
+      "bytes": 3727,
+      "sha256": "9345f38173e42b5414f3dee37cde0749b58893d8fcadeada09907c372e94bda6"
+    },
+    {
+      "path": "parent_v17/03_方法/production/artifacts.py",
+      "bytes": 10843,
+      "sha256": "17c571ada8313259db77697ab07266c3ed89b3f47857961af5832386ca43dc09"
+    },
+    {
+      "path": "parent_v17/03_方法/production/carriers.py",
+      "bytes": 28290,
+      "sha256": "bbc5681581fadd854a8d8b6b83de816c0a78440ab70f6f310563368335555178"
+    },
+    {
+      "path": "parent_v17/03_方法/production/data.py",
+      "bytes": 5316,
+      "sha256": "5b86da3f1f4ca9d3de993bafecaffb35ddfd8b9544be510593c3d991ff9b340f"
+    },
+    {
+      "path": "parent_v17/03_方法/production/freeze_implementations.py",
+      "bytes": 4660,
+      "sha256": "26a6eff43e397322c4abdd1dac6643e45fda15a4fdcca4e4523b35559e2f552b"
+    },
+    {
+      "path": "parent_v17/03_方法/production/losses.py",
+      "bytes": 29188,
+      "sha256": "5aa655a3481afec9d22576a4fe663bd758768d9dc5391d49395ee6e50f199082"
+    },
+    {
+      "path": "parent_v17/03_方法/production/method_contracts.json",
+      "bytes": 16359,
+      "sha256": "0a18a09da789b7737a0297ed54b25b8fe6b79c5ebc118aa2436ec8d7b3a38e7b"
+    },
+    {
+      "path": "parent_v17/03_方法/production/objectives.py",
+      "bytes": 11735,
+      "sha256": "3e2347298e7ccecec3349406c1976c5e5f06d9cb6d86ac55191578df14f62833"
+    },
+    {
+      "path": "parent_v17/03_方法/production/ours_road_v16.py",
+      "bytes": 6222,
+      "sha256": "4481176f0307b135034b5cbeca337646d70ca27208697f158160309bd4452993"
+    },
+    {
+      "path": "parent_v17/03_方法/production/ours_stateful.py",
+      "bytes": 10423,
+      "sha256": "2351163903a59743225256a539c6f7186c3c59b9b923168cb032e3b984677014"
+    },
+    {
+      "path": "parent_v17/03_方法/production/printable30values.txt",
+      "bytes": 715,
+      "sha256": "8317b040d6ece89bde219c10a3bbbfd3220747f36657c4724476776694fcd810"
+    },
+    {
+      "path": "parent_v17/03_方法/production/road_detection_objectives.py",
+      "bytes": 12638,
+      "sha256": "04c768cdec29674735bfdfd6256e8bb93bba3cf6a12cc0714a1c88b1e9193b70"
+    },
+    {
+      "path": "parent_v17/03_方法/production/road_patch_contract.py",
+      "bytes": 9925,
+      "sha256": "565066784eaac77f422c7943185221492263cfe590ba51b5642dc9b653c225a5"
+    },
+    {
+      "path": "parent_v17/03_方法/production/road_runtime.py",
+      "bytes": 6502,
+      "sha256": "45e0becae55611a05432c1afc8fabd69b1e2c019f582042ce2e2f656c40a45be"
+    },
+    {
+      "path": "parent_v17/03_方法/production/stable_optimizers.py",
+      "bytes": 2532,
+      "sha256": "92384cb62bb1b98e24b4266b458c768462c1226fe861a23cc7e646ad0271bd50"
+    },
+    {
+      "path": "parent_v17/03_方法/production/test_ours_road_v16.py",
+      "bytes": 12671,
+      "sha256": "066debc5adada39568b58e6c725c4c436dc6b70da13ccf21bbbb7d6d0bdbeeba"
+    },
+    {
+      "path": "parent_v17/03_方法/production/test_road_detection_objectives.py",
+      "bytes": 8767,
+      "sha256": "2bd5178368b2eaace9b46429a6ab4e3d83c5a7037eb32f9257d3fa29bdeabaf3"
+    },
+    {
+      "path": "parent_v17/03_方法/production/test_road_offline_factory.py",
+      "bytes": 6608,
+      "sha256": "714c06af7869dea6c4038584a49a10cbaebc44b0be0395a4f5370d7fc6fe2e9b"
+    },
+    {
+      "path": "parent_v17/03_方法/production/test_road_patch_contract.py",
+      "bytes": 9623,
+      "sha256": "a14b459d74d713c407529b6bef6cbeb206d64f9e60adb7ef83a4d0a8d606a52c"
+    },
+    {
+      "path": "parent_v17/03_方法/production/test_road_runtime.py",
+      "bytes": 4254,
+      "sha256": "9ece410cd20ece1ff788979c5feedab5def6d450c85c560040453a1cb2ef3af9"
+    },
+    {
+      "path": "parent_v17/03_方法/production/trainer.py",
+      "bytes": 49254,
+      "sha256": "56492497555ab9620bc026fb1c360ca879eb59a9881c34fff1188655e4111bff"
+    },
+    {
+      "path": "parent_v17/04_统一评估/depth_diagnostics.py",
+      "bytes": 9154,
+      "sha256": "0426e3b6c6b5c9a78e5d1bc155cd66973755c90386683440a17e492449422dcf"
+    },
+    {
+      "path": "parent_v17/04_统一评估/evaluator.py",
+      "bytes": 38106,
+      "sha256": "50bcf1aad80ae902d6e660017b1614d83c9a8a085b6a6cbe02a5402e31752c81"
+    },
+    {
+      "path": "parent_v17/04_统一评估/raw_evidence.py",
+      "bytes": 16016,
+      "sha256": "c834645cd17bac97e54f05f465b66633414c8d6cc98110029e08d0ce2cd039fe"
+    },
+    {
+      "path": "parent_v17/05_运行/evaluate_ours_stateful_validation.py",
+      "bytes": 13573,
+      "sha256": "4ed1719f82fb0c18c4c43a124ec38a006f84f2adc19d3fd207e27b94549d412e"
+    },
+    {
+      "path": "parent_v17/05_运行/evaluate_road_comparison.py",
+      "bytes": 20223,
+      "sha256": "33b3b5ce8e9bcdb6e697b74a60dfcdef3134bf22625e69d9d8fe972efb3db9a2"
+    },
+    {
+      "path": "parent_v17/05_运行/evaluate_road_train_probes.py",
+      "bytes": 16984,
+      "sha256": "281a8a3e564ada9da3b8b890dddad5af4c1df6c49897ce745d670d567aa0e4c2"
+    },
+    {
+      "path": "parent_v17/05_运行/inventory_sd35_snapshot.py",
+      "bytes": 1830,
+      "sha256": "7023d2da17f6a0be73f587b671b06499eea66775db66402a8de61a9395bd9381"
+    },
+    {
+      "path": "parent_v17/05_运行/run_local_checks.py",
+      "bytes": 2448,
+      "sha256": "e51b8d71747474408becd62d0abd1f24302d0ce6aab6489522b0a6c1bc283a01"
+    },
+    {
+      "path": "parent_v17/05_运行/run_ours_stateful_validation.py",
+      "bytes": 31248,
+      "sha256": "363eb41107b0f6c97e50bb43cbcc4f1df4d749aa54321157e642765b54f02141"
+    },
+    {
+      "path": "parent_v17/05_运行/run_road_patch_candidate.py",
+      "bytes": 23512,
+      "sha256": "e06a873bb0e192fd5f7868cfd36091f983633031d9406dc589984c0f745271fc"
+    },
+    {
+      "path": "parent_v17/05_运行/run_v17_matrix.py",
+      "bytes": 6943,
+      "sha256": "b22ca8691196e2ccf91840372c2f7e28c6247075be33e47102fa63c16c50c8f0"
+    },
+    {
+      "path": "parent_v17/05_运行/test_evaluate_road_comparison.py",
+      "bytes": 11894,
+      "sha256": "1e5271783881087f89ff1ef29e82db1cdcb214bbf3a602406d524aa07aeb6ba6"
+    },
+    {
+      "path": "parent_v17/05_运行/test_ours_checkpoints_v17.py",
+      "bytes": 1725,
+      "sha256": "20b04c75800a4939d80c5cda0893b06f1137fa81107dce980e7559801c620754"
+    },
+    {
+      "path": "parent_v17/05_运行/test_road_runner_integration.py",
+      "bytes": 7028,
+      "sha256": "ecca008cff0f0d91536b4571e2ef5c56b022ec31d886cd4eb2742af1625ad2c7"
+    },
+    {
+      "path": "parent_v17/05_运行/test_road_train_probes.py",
+      "bytes": 10977,
+      "sha256": "1feb3c5e34206a011f2af5df7c077d573140b7bd059da422f73d538604df52cf"
+    },
+    {
+      "path": "parent_v17/05_运行/test_road_validation_budget.py",
+      "bytes": 11962,
+      "sha256": "5ebec3b50e7bedfe379e751a31a9d90a6e084d2b8e768534da26b26bcf60ebec"
+    },
+    {
+      "path": "parent_v17/05_运行/test_v17_matrix.py",
+      "bytes": 1108,
+      "sha256": "f3ebe7e21f8500835daba02aae86e3704f3595faad8abc82aeb087f1eb840ac9"
+    },
+    {
+      "path": "parent_v17/05_运行/verify_package.py",
+      "bytes": 967,
+      "sha256": "32b2e09c57789efec24048780889233445bc55d3d4fa2c861d7a994387e490d0"
+    },
+    {
+      "path": "parent_v17/PACKAGE_MANIFEST.json",
+      "bytes": 11368,
+      "sha256": "36ab8bd31d40e56e06c15120baa7751177e41b36eda32ad9aa56748728420352"
+    },
+    {
+      "path": "parent_v17/ROAD_PATCH_CANDIDATE.md",
+      "bytes": 5311,
+      "sha256": "caa9a7519278e51c07de6c9eaaea689bb3565810b9cccdc04e25224405b17550"
+    },
+    {
+      "path": "parent_v17/parent_copy_manifest.json",
+      "bytes": 6097,
+      "sha256": "72c62132b02af916e259a4ff1906c78fdca1dafe57fda0cd04068882f3e65b50"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_manifest.json",
+      "bytes": 3555,
+      "sha256": "8e2924a311643669ae950dcb46f58882f694b993152bc460cadc92fbc77d12a4"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/art_LICENSE",
+      "bytes": 1105,
+      "sha256": "5c9c7727ba609f7287927f597481c2f69cbf645b170c67198085503f7d18edff"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/art_robust_dpatch.py",
+      "bytes": 23248,
+      "sha256": "6037a94f8fb60236c848e8a4c82448ea5dbc1bbada782d3e08be9ed4380c5847"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/contextual_602fd267/LICENSE",
+      "bytes": 1068,
+      "sha256": "4b6b054dbb8ff2097c860f56668ae3eee59ba7d921356cadf90c2da9fa4da2bb"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/contextual_602fd267/README.md",
+      "bytes": 3944,
+      "sha256": "46afecf08aee61491846af0bf9d9cf61bcbe91424a450b559971dbd47cabec01"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/contextual_602fd267/region_loss.py",
+      "bytes": 24637,
+      "sha256": "8ccf03d75aebd903159c3ef0dec0bfe9927668522c5f6c10c6b929245f124cfe"
+    },
+    {
+      "path": "parent_v17/source_evidence/source_review/contextual_602fd267/train_universal_patch.py",
+      "bytes": 7111,
+      "sha256": "ff472b885f23a9542272b3d6a2a70074f2df912e85c1e7759b73f6c3536fb95c"
+    },
+    {
+      "path": "protocol/lineage.json",
+      "bytes": 7079,
+      "sha256": "947bb042d780e7f704473fe4c6d7a1934305c505ff3a5b2017db218f9332e068"
+    },
+    {
+      "path": "protocol/train_schedule.json",
+      "bytes": 11603,
+      "sha256": "da9fa6f12aa8201e2cbca955e9988c0aec1cc67fe5f9ccdfa9d26f0d522e74b5"
+    },
+    {
+      "path": "protocol/training_protocol.json",
+      "bytes": 6394,
+      "sha256": "e7ecfc85d5bb3dfe2da797322827727cb94854305141f452ddbe72bc8d3d2b24"
+    },
+    {
+      "path": "reference_analysis/ANALYSIS_PLAN.json",
+      "bytes": 1203,
+      "sha256": "7b8f1b7f4ba31289df7a4f51352efa2612a43c53786a2b578cf309a05a98d23b"
+    },
+    {
+      "path": "reference_analysis/RESULT.json",
+      "bytes": 158454,
+      "sha256": "f512c785adfd3cb8ee0b1e64de92c25066736b8930f9baf68b0e8d5b4919f8a9"
+    },
+    {
+      "path": "reference_analysis/analyze_train_updates.py",
+      "bytes": 11853,
+      "sha256": "037c6dc2b1296ced84999e70a59fdf9f2b6b8f021fc8b0a86c0f0bfb196aa50e"
+    },
+    {
+      "path": "reference_v20/LOCAL_DELIVERY_VERIFICATION.json",
+      "bytes": 536,
+      "sha256": "5dc340d20a874405e0530b71afafa5be6a88de9934406b4d85d00c58e16dddbc"
+    },
+    {
+      "path": "reference_v20/RESULT_SUMMARY.json",
+      "bytes": 3075,
+      "sha256": "03dd6eda38b1fb6b150fc7abddd057adaee9791646f6bb0ca456b40ad827976a"
+    },
+    {
+      "path": "reference_v20/SCIENTIFIC_REVIEW.md",
+      "bytes": 5052,
+      "sha256": "b176058f667d111f48945cde1c303e78d964be7f9a44b427b9aa12a9bafa9f0d"
+    },
+    {
+      "path": "reference_v21/PACKAGE_MANIFEST.json",
+      "bytes": 18295,
+      "sha256": "d94c4d827fabe3cdb7148fd7014f0cddbf4287903295663ad22ec2cd55203a0d"
+    },
+    {
+      "path": "reference_v21/protocol/training_protocol.json",
+      "bytes": 4964,
+      "sha256": "739a0606b44907520e92f23b1f13b403a2d390004b2570f9cb493767405a4f9c"
+    },
+    {
+      "path": "reference_v21/training/inputs.py",
+      "bytes": 11160,
+      "sha256": "343ed17d5205a2a950f462746827ff2b370ed98a351246671042553f2058b588"
+    },
+    {
+      "path": "reference_v21/training/objective_loss.py",
+      "bytes": 10335,
+      "sha256": "f01a3e2b2b6532e53648137595d1bdfe3eeaf9251c6cd8db3ef1feba1d0c7384"
+    },
+    {
+      "path": "reference_v21/training/run_training.py",
+      "bytes": 29473,
+      "sha256": "7be1a6575a85e23b4b15239ddede3314b12531ee99166599e4393cae22c0f92c"
+    },
+    {
+      "path": "reference_v21/training/ssd_objectives.py",
+      "bytes": 16181,
+      "sha256": "7140505fff4de3c2220ada2f1ea715b9245d9a55bc464549098f7eb0d503299c"
+    },
+    {
+      "path": "reference_v23/PACKAGE_MANIFEST.json",
+      "bytes": 16576,
+      "sha256": "6e71169fbc784867bbb822769494715f7710f2526360f30ef1215cdd67912def"
+    },
+    {
+      "path": "reference_v23/protocol/lineage.json",
+      "bytes": 2567,
+      "sha256": "f836776ed053c78871a5f4af31b6fc0b9e0fc55f5373424b232b59da97c659f8"
+    },
+    {
+      "path": "reference_v23/protocol/train_schedule.json",
+      "bytes": 11603,
+      "sha256": "da9fa6f12aa8201e2cbca955e9988c0aec1cc67fe5f9ccdfa9d26f0d522e74b5"
+    },
+    {
+      "path": "reference_v23/protocol/training_protocol.json",
+      "bytes": 5615,
+      "sha256": "1fd9cdb25ac527dca2122808813638a7f4658437a3f5d8ec34f44f56b8cc04c1"
+    },
+    {
+      "path": "reference_v23/tests/test_evaluation.py",
+      "bytes": 23922,
+      "sha256": "d082900b2a41b0c278338ee78b1b57587172b61fb89390d1c4f61d11c2ebc4a0"
+    },
+    {
+      "path": "reference_v23/tests/test_inputs_matrix.py",
+      "bytes": 11935,
+      "sha256": "44c0f73bf497569495d946853b21dd4b35cb977a9418bd340aff1849a7630a0c"
+    },
+    {
+      "path": "reference_v23/tests/test_objective_loss.py",
+      "bytes": 26586,
+      "sha256": "7653c25a3401458f200d8392ef6c8080b8955730e76a79dabab1f4c2c80107e1"
+    },
+    {
+      "path": "reference_v23/tests/test_training.py",
+      "bytes": 15074,
+      "sha256": "400b52a8276d14c800d890f8e3a91dffb3ca2638d14a0e2dd6c63692a7dd3dbe"
+    },
+    {
+      "path": "reference_v23/training/attack_objectives.py",
+      "bytes": 8898,
+      "sha256": "c6dbfcb26156f01264e3e90cbf0c194216decb884de39e63f3d4df9fbb609f9c"
+    },
+    {
+      "path": "reference_v23/training/compare_results.py",
+      "bytes": 19782,
+      "sha256": "420019de723e163af234c83ce3e82a10dcaade428b2ad856029acb6a5b47c3e1"
+    },
+    {
+      "path": "reference_v23/training/evaluate_validation.py",
+      "bytes": 31273,
+      "sha256": "f472d4ae73a5b9a74911f768a81d1b04f792b5b24319a52e7b0d4479cf465a61"
+    },
+    {
+      "path": "reference_v23/training/inputs.py",
+      "bytes": 11900,
+      "sha256": "e1457305fd06878b941349cb9a52587d529420b6ee44d0f8fb07820b15b6bfcd"
+    },
+    {
+      "path": "reference_v23/training/objective_loss.py",
+      "bytes": 10812,
+      "sha256": "4602a38a693d1816858ea5294842e54fcfbfa21fac1ddafe6486ed60497bb165"
+    },
+    {
+      "path": "reference_v23/training/run_matrix.py",
+      "bytes": 12524,
+      "sha256": "02758889f16cb7fdbab3193eb994772416d952383bd3768984adb449bc595f1d"
+    },
+    {
+      "path": "reference_v23/training/run_training.py",
+      "bytes": 29491,
+      "sha256": "79826796c22feb35e50bf425a9dbb6a07c8db32c1ae9f46281bc7e28b606972d"
+    },
+    {
+      "path": "reference_v23/training/state_evidence.py",
+      "bytes": 10700,
+      "sha256": "99757fd8e9cf2f8ca3bcccc8e887ff8dc6b263a705a38d30d71a18affbbcb5c2"
+    },
+    {
+      "path": "reference_v24/PACKAGE_MANIFEST.json",
+      "bytes": 20207,
+      "sha256": "ea2c1e906f0a181f117ff77c8c1a55b12dfabcc945bb7ec33d40d28d847f13a3"
+    },
+    {
+      "path": "reference_v24/training/attack_objectives.py",
+      "bytes": 8898,
+      "sha256": "c6dbfcb26156f01264e3e90cbf0c194216decb884de39e63f3d4df9fbb609f9c"
+    },
+    {
+      "path": "reference_v24/training/compare_results.py",
+      "bytes": 19697,
+      "sha256": "a716a6817de1b4ab0806ab4062d99568b69be4a2122f587c87eae39c44efa523"
+    },
+    {
+      "path": "reference_v24/training/evaluate_validation.py",
+      "bytes": 31725,
+      "sha256": "7bd9cd78e76b3ac096a4e60d3cce1bf15569b0ab52560d4198696e056532c3cc"
+    },
+    {
+      "path": "reference_v24/training/inputs.py",
+      "bytes": 12274,
+      "sha256": "c3bd1eb4fd5a62e9dd85319fa999ddb60e7d755701095abd71b6dd317daa7268"
+    },
+    {
+      "path": "reference_v24/training/objective_loss.py",
+      "bytes": 10600,
+      "sha256": "1b7c32b28ac11cc9e122aacf3e1db6f3671e0dff6907c429028103b4022c7923"
+    },
+    {
+      "path": "reference_v24/training/run_matrix.py",
+      "bytes": 12513,
+      "sha256": "6ad58dcaa138a2def04d3089f70309a33003c0be808672761db739ef8c98cc50"
+    },
+    {
+      "path": "reference_v24/training/run_training.py",
+      "bytes": 29821,
+      "sha256": "6b7695861184c76ea9ba911f54753c9b287f566827fccba320380c48158959e8"
+    },
+    {
+      "path": "reference_v24/training/state_evidence.py",
+      "bytes": 10696,
+      "sha256": "0fa5c2d67c81e186510bd4b0181a37e4302926bfa41dc51ba4586b4ed676f764"
+    },
+    {
+      "path": "reference_v24/training/update_rule.py",
+      "bytes": 3702,
+      "sha256": "1403e4a13e304a2cf13012487fc56446cdd69d53d77262dd631a47d9e0dadabb"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "bytes": 28816,
+      "sha256": "1c7ddf2ee51292079b60da02ff196b2b1bbbc06427d124df9e17796e553654a0"
+    },
+    {
+      "path": "tests/test_inputs_matrix.py",
+      "bytes": 4878,
+      "sha256": "385392e6f0158e5b19c8bf70979909377866a4f66fb7ac3c63d024969db5b5ba"
+    },
+    {
+      "path": "tests/test_objective_loss.py",
+      "bytes": 14329,
+      "sha256": "06a96c89cb8902b499640135e4944a5120e05f89e6d84e88493ab431942b9099"
+    },
+    {
+      "path": "tests/test_training.py",
+      "bytes": 17515,
+      "sha256": "7b22c46184ea6b79d7149e0514b01ee1fae5dcb902611da390b6979654a8d2a0"
+    },
+    {
+      "path": "tests/test_update_rule.py",
+      "bytes": 5866,
+      "sha256": "a02dd0aea707b877feddf37792bb777fe92630ab5a7ac01d7ac9ea5f3807046c"
+    },
+    {
+      "path": "training/compare_results.py",
+      "bytes": 17258,
+      "sha256": "6e3754422350bf9d47f41fcc39b9ee3edfda1f231d4656bd57380921f4fbaea0"
+    },
+    {
+      "path": "training/evaluate_validation.py",
+      "bytes": 40096,
+      "sha256": "e9e228e5a28cff911050b9cc1704eb82ddd2420ef1303818b265ca3553f7ad2f"
+    },
+    {
+      "path": "training/inputs.py",
+      "bytes": 13156,
+      "sha256": "3f5f4d82a730995f274e0bec955001b5a67f2070c37b9d5ee604ee0b4b548f3d"
+    },
+    {
+      "path": "training/objective_loss.py",
+      "bytes": 10712,
+      "sha256": "9806bf97bf310f1ea51ec48d4aec813826462fac45f2a8cb7270f0ef5283f0d2"
+    },
+    {
+      "path": "training/run_matrix.py",
+      "bytes": 273,
+      "sha256": "aabc9034db87e285b5990b7b3f4fb1c46ac07d1a98ade9d9dfdacc1423c3185a"
+    },
+    {
+      "path": "training/run_training.py",
+      "bytes": 30636,
+      "sha256": "c593e514717776ec63a230db7a2303f76ca9d05105b703b4a3ca179b18597750"
+    },
+    {
+      "path": "training/ssd_objectives.py",
+      "bytes": 16181,
+      "sha256": "7140505fff4de3c2220ada2f1ea715b9245d9a55bc464549098f7eb0d503299c"
+    },
+    {
+      "path": "training/state_evidence.py",
+      "bytes": 11702,
+      "sha256": "8d63652d76c77fca34464433db910ad23ec2eef5115073ac1895fa276e77369c"
+    },
+    {
+      "path": "training/update_rule.py",
+      "bytes": 3999,
+      "sha256": "16f7afebc32071e97e9f05335c4cb777977dcf453962039400b0697bc38886ae"
+    },
+    {
+      "path": "vendor_v20/ssd_objectives.py",
+      "bytes": 14721,
+      "sha256": "68e622c1fcb6a4ed5e6c04bc26ccdaa131ff20f594beb078284d7d30511fe700"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "bytes": 16004,
+      "path": "ablation_contract_v1.py",
+      "sha256": "926cd432ca0de63417e95a572371084396e1db14faa60a84de4f32ef92c9b802"
+    },
+    {
+      "bytes": 34275,
+      "path": "budget_gpu_component_v1.py",
+      "sha256": "fa7a76392b2218b70a9c46b1e187d4e7c9b01bda4f5b65a7fff9addf50879e1b"
+    },
+    {
+      "bytes": 81133,
+      "path": "derived_budget_training_engine_v2.py",
+      "sha256": "e7b6b31edb3050e7d9496b276d3fde21ffa68748b60efa7966059741642ca2ad"
+    },
+    {
+      "bytes": 17612,
+      "path": "original_completed_prefix_native.py",
+      "sha256": "df1b61212d0e2c6a2b3bd13bb5dba61b7370628f88b8f7481354250511abfe16"
+    },
+    {
+      "bytes": 25603,
+      "path": "sd35_conditional_two_clip_v1.py",
+      "sha256": "946c415b14c8119e70b389f3ec3c03444e51dd854742878cd0cf191495c263cb"
+    },
+    {
+      "bytes": 31998,
+      "path": "train_ours5_ablation_part_v1.py",
+      "sha256": "57dd6afc2e7fcbfa39700f2f70ad9a750081e871a8a61be2851d8082d2d44d87"
+    },
+    {
+      "bytes": 9957,
+      "path": "verify_train_native200_CPU_v1.py",
+      "sha256": "d8b3208510b15cf4151740236eed5f53c2695f1f320b749cf1223a36119ba606"
+    }
+  ],
+  "identity": "ours5_b3_full_nuscenes100_fresh200_125_20261104_v1",
+  "schema": "ours5-no-norm-match-derived-source-package-v1"
+}

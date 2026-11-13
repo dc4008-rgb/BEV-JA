@@ -1,0 +1,75 @@
+{
+ "note": "Derived from the eight runner packages on the experiment machine: what each hyper-parameter run changes relative to the final configuration. switch_changes are applied to scientific_config.switches, controller_overrides to controller_config, depth_beta to depth_beta.",
+ "variants": {
+  "b3_beta_005": {
+   "switch_changes": {},
+   "controller_overrides": {},
+   "depth_beta": 0.05,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "7d9f74ae6d826cf345f7ba2bb4e6b681129f7e87b6ea1579b44f53b0f3bf5908"
+  },
+  "b3_beta_020": {
+   "switch_changes": {},
+   "controller_overrides": {},
+   "depth_beta": 0.2,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "54fc1fc25d4d2185a5fa1ed3b9d1e5387ad8b653feecb02292e8a916f0da0f74"
+  },
+  "b3_ema_09": {
+   "switch_changes": {},
+   "controller_overrides": {
+    "ema_decay": 0.9
+   },
+   "depth_beta": null,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "41028cb0600f7db2545c209986c3a20496cdb40ebe9adb87bfcf0fc77559e864"
+  },
+  "b3_full_nuscenes100": {
+   "switch_changes": {},
+   "controller_overrides": {},
+   "depth_beta": null,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "595003abe4b0035caa2596243e53ba9bf3fc4e61cf2f99f1006e3d7c4496271c"
+  },
+  "b3_model_mu_09": {
+   "switch_changes": {},
+   "controller_overrides": {
+    "model_mu": 0.9
+   },
+   "depth_beta": null,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "c610c6de10c9613219743c52bae6b1241f1cd0a802feebc3e2237966b1643c1c"
+  },
+  "b3_task_mu_04": {
+   "switch_changes": {},
+   "controller_overrides": {
+    "task_mu": 0.4
+   },
+   "depth_beta": null,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "3253c369ebb9bfa59e47718e83d7cf8d93c18c5971746e15302f9f31944d7ef5"
+  },
+  "b3_tp10": {
+   "switch_changes": {
+    "period": 10
+   },
+   "controller_overrides": {},
+   "depth_beta": null,
+   "allowed_periods": [
+    1,
+    5,
+    10
+   ],
+   "b3_overrides_sha256": "88dbddb23cec892b000aea3adab522589ac0c7162d4d7adf05ff5030798a95a2"
+  },
+  "b3_tp1": {
+   "switch_changes": {
+    "period": 1
+   },
+   "controller_overrides": {},
+   "depth_beta": null,
+   "allowed_periods": null,
+   "b3_overrides_sha256": "595003abe4b0035caa2596243e53ba9bf3fc4e61cf2f99f1006e3d7c4496271c"
+  }
+ }
+}
